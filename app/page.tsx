@@ -34,7 +34,8 @@ const [formData, setFormData] = useState({
 
       if (response.ok) {
         setSubmitStatus('success');
-        setFormData({ name: '', email: '', phone: '', goal: '' });
+        setFormData({ name: '', email: '', phone: '', goal: '', instagram: '' });
+
       } else {
         setSubmitStatus('error');
       }
