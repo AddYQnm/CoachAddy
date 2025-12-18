@@ -10,12 +10,14 @@ export default function CoachingLandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [step, setStep] = useState(1);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    goal: ''
-  });
+const [formData, setFormData] = useState({
+  name: '',
+  email: '',
+  phone: '',
+  goal: '',
+  instagram: '' // <- ajouté
+});
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
