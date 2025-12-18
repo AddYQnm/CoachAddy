@@ -14,7 +14,7 @@ export default function CoachingLandingPage() {
     name: '',
     email: '',
     phone: '',
-    goals: ''
+    goal: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -32,7 +32,7 @@ export default function CoachingLandingPage() {
 
       if (response.ok) {
         setSubmitStatus('success');
-        setFormData({ name: '', email: '', phone: '', goals: '' });
+        setFormData({ name: '', email: '', phone: '', goal: '' });
       } else {
         setSubmitStatus('error');
       }
@@ -823,4 +823,4 @@ export default function CoachingLandingPage() {
       </footer>
     </main>
   );
-}
+} 
